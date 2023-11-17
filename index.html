@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="N.png" type="image/x-icon">
+    <title>NewsApp</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container">
+            <a href="#" class="company-logo" onclick= "reload()">
+                <img src="https://www.websitexnetwork.com/wp-content/uploads/2015/09/news-logo.jpg" >
+                <h3>UPON</h3>
+                <h4>stay informed</h4>
+            </a>
+
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-items" id = "General" onclick="onNavItemClick('General')">General</li>
+                    <li class="nav-items" id = "Business" onclick="onNavItemClick('Business')">Business</li>
+                    <li class="nav-items" id = "Entertainment" onclick="onNavItemClick('Entertainment')">Entertainment</li>
+                    <li class="nav-items" id = "Health" onclick="onNavItemClick('Health')">Health</li>
+                    <li class="nav-items" id = "Science" onclick="onNavItemClick('Science')">Science</li>
+                    <li class="nav-items" id = "Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <li class="nav-items" id = "Technology" onclick="onNavItemClick('Technology')">Technology</li>
+                </ul>
+            </div>
+
+            <div class="search-bar">
+                <input  id="search-txt" type="text" class="search-input" placeholder="Type here">
+                <button  id="search-btn" class="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        
+    <div class="spinner-div">
+        <img src="https://assets-v2.lottiefiles.com/a/8262dd92-117c-11ee-8acc-8b9f8c5d8cb6/CDXQo05gMm.gif" alt="loading" id="spinner">
+
+        <!-- <img src="https://media.tenor.com/axAeNjNIUBsAAAAC/spinner-loading.gif" alt="loading"> -->
+    </div>
+      
+        <div class="card-container container" id="card-container">
+          
+        </div>
+    </main>
+
+    <template id="template-news-card">
+
+        <div class="card">
+
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-Image" id="news-Img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 id="news-source" class="news-source">End Gadgets 14/10/2023</h6>
+                <p  id="news-desc" class="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem ducimus odio dolor sit incidunt vero, vitae nam ex autem in earum illum. Repellendus laborum corrupti dolor, nostrum ab possimus?
+                </p>
+            </div>
+        </div>
+    </template>
+
+</body>
+
+</html>
