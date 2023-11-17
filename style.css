@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family:  'Poppins', sans-serif;
+}
+
+nav{
+    background-color:white;
+    box-shadow: 0 1px 1px rgb(211, 210, 210) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.company-logo{
+    display: flex;
+}
+
+.company-logo img{
+    margin-top: 3px;
+    width: 112px;
+    height: 35px;
+   
+}
+.company-logo h3{
+    margin-left: -17px;
+    font-size: 25px;
+    margin-top: 8px;
+    color: rgb(216, 33, 33);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.company-logo h4{
+    margin-top: 37px;
+    margin-left: -80px;
+    font-size: 14px;
+    color: rgb(160, 19, 19);
+    font-style: italic;
+}
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: rosybrown;
+}
+
+.nav-links .nav-items{
+    cursor: pointer;
+}
+.nav-links .nav-items:hover{
+    color: rgb(160, 19, 19);
+}
+
+.nav-links .nav-items:active{
+    color: rgb(160, 19, 19);
+}
+.nav-items.active{
+    color: rgb(160, 19, 19);
+}
+.search-bar{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.search-input{
+    font-size: 15px;
+    outline: none;
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 1px solid rgb(199, 196, 196);
+    font-family:  'Poppins', sans-serif;
+}
+
+.search-btn{
+    font-size: 13px;
+    background-color: rgb(216, 33, 33);
+    color: white;
+    padding: 6px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family:  'Poppins', sans-serif;
+}
+.search-btn:hover{
+    background-color: rgb(160, 19, 19);
+}
+
+.spinner-div{
+    text-align: center;
+}
+.spinner-div img{
+    margin-top: -67px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: -63px;
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+    margin-left: 26px;
+}
+
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    align-items: start;
+}
+
+.card{
+    width: 360px;
+    min-height: 460px;
+    max-height: 460px;
+    box-shadow: 0 1px 2px rgb(156, 143, 118);
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background-color: rgb(248, 248, 248);
+    transform: translateY(-10px);
+}
+
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 2s ease;
+}
+.card-header img:hover{
+    transform: scale(1.1);
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* !=============================> MEDIA QUERIES STARTED <===================! */
+
+
+
+@media (max-width:1000px) {
+    .spinner-div{
+        display: none;
+    }
+    .card-container{
+        margin-top: 30px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        align-items: center;
+    }
+}
+
+
+
+
+@media (max-width:900px) {
+    .nav-links{
+        display: none;
+    }
+    .spinner-div{
+        display: none;
+    }
+    .card-container{
+        margin-top: 30px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        align-items: center;
+    }
+}
+
+@media (max-width:769px) {
+    .nav-links{
+        display: none;
+    }
+    .spinner-div{
+        display: none;
+    }
+    .card{
+        margin-left: 0.1rem;
+    }
+    .card-container{
+        margin-right: 0.5rem;
+        margin-left: 0rem;
+        margin-top: 1rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        column-gap: -1rem;
+        align-items: center;
+    }
+}
+
